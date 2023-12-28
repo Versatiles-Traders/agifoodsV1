@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Navbar Example</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" type="text/css" href="homepage.css" />
+    <!-- Bootstrap CSS (link to the CDN) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Dry fruits</title>
+    <!-- Include Owl Carousel CSS (from CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Include Font Awesome CSS from a CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <!-- <div class="bannerImg">
+            <img src="../nuts1.jpg" alt="" width="95px">
+        </div> -->
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <!-- Brand/logo -->
+          <a class="navbar-brand logoImg" href="#">
+            <img src="../Black_Gold_LOGO-removebg1.png" alt="" width="45px" />
+          </a>
+
+          <!-- Toggle button for small screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse lefttNav" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link AgiFoods" href="#">AGI Foods</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar items -->
+          <div class="collapse navbar-collapse rightNav" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" onclick="scrollToDiv()">Nuts</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToDivDry()">Dry Fruits</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#" onclick="scrollToDivSpices()">Spices</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="carousels">
+        <div class="owl-carousel">
+          <div class="item">
+            <img src="../carousel/carousel_1_1.jpeg" alt="Slide 1" />
+          </div>
+          <div class="item">
+            <img src="../carousel/carousel_2_2.jpeg" alt="Slide 2" />
+          </div>
+          <div class="item">
+            <img src="../carousel/carousel_3_3.jpeg" alt="Slide 3" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="deliverProd">
+        <div class="container deliverCont">
+          <div class="delivers">
+            <div class="deliverIMG">
+              <img src="../customer-loyalty.png" alt="Slide 1" width="55px" />
+            </div>
+            <div class="deliverContent">
+              <h5 style="font-weight: 700">10000+</h5>
+              <p class="deliverBrief">Deliveries</p>
+            </div>
+          </div>
+          <div class="delivers">
+            <div class="deliverIMG">
+              <img src="../coronavirus-1.png" alt="Slide 1" width="55px" />
+            </div>
+            <div class="deliverContent">
+              <h5 style="font-weight: 700">35+</h5>
+              <p class="deliverBrief">Countries Shipped</p>
+            </div>
+          </div>
+          <div class="delivers">
+            <div class="deliverIMG">
+              <img src="../public-service.png" alt="Slide 1" width="55px" />
+            </div>
+            <div class="deliverContent">
+              <h5 style="font-weight: 700">100+</h5>
+              <p class="deliverBrief">Happy Customers</p>
+            </div>
+          </div>
+          <div class="delivers">
+            <div class="deliverIMG">
+              <img src="../nut.png" alt="Slide 1" width="55px" />
+            </div>
+            <div class="deliverContent">
+              <h5 style="font-weight: 700">100+</h5>
+              <p class="deliverBrief">Products</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="popular">
+        <div class="popularCat">
+          <h2 class="popularhead">Popular Categories</h2>
+          <div class="popularIMG">
+            <img
+              src="../tree_line-removebg-preview.png"
+              alt="Slide 1"
+              width="250px"
+              height="60px"
+            />
+          </div>
+          <div class="container PopularCont">
+            <div class="popularContent">
+              <div class="popularImages">
+                <img src="../popular/berries.png" alt="Slide 3" width="170px" />
+              </div>
+              <div class="popularImages">
+                <img
+                  src="../popular/dried_fruits.png"
+                  alt="Slide 3"
+                  width="170px"
+                />
+              </div>
+              <div class="popularImages">
+                <img src="../popular/nuts.png" alt="Slide 3" width="170px" />
+              </div>
+              <div class="popularImages">
+                <img src="../popular/seeds.png" alt="Slide 3" width="170px" />
+              </div>
+              <div class="popularImages">
+                <img src="../popular/spices.png" alt="Slide 3" width="170px" />
+              </div>
+              <div class="popularImages">
+                <img src="../popular/special.png" alt="Slide 3" width="170px" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popular">
+        <div class="popularHeader">
+          <h2 class="popularhead">Product Category</h2>
+          <div class="popularIMG">
+            <img
+              src="../tree_line-removebg-preview.png"
+              alt="Slide 1"
+              width="250px"
+              height="60px"
+            />
+          </div>
+          <div class="container listProducts">
+            <!-- <div class="row">
+              <div class="col-lg-3"> -->
+            <div id="cardContainer" class="row">
+              <h2 class="popularSubhead" id="nutsDiv">Nuts</h2>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/black_sesame.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/cashew_nuts.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/cashew_nuts.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/cashew_nuts.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="cardContainer" class="row">
+              <h2 class="popularSubhead" id="DryDiv">Dry fruits</h2>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/dry_grapes.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list//nuts.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/white_sesame_seeds.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/black_sesame.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="cardContainer" class="row">
+              <h2 class="popularSubhead" id="SpicesDiv">Spices</h2>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/methi_seed.jpeg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">METHI SEEDS (வெந்தையம்)</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/nuts.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/white_sesame_seeds.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton" onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="cardHead">
+                    <img src="../list/cashew_nuts.jpg" alt="Slide 1" class="cardsImg" />
+                  </div>
+                  <div class="contCard">
+                    <div class="cardName">
+                      <p class="name">ALMONDS</p>
+                      <p class="lowprice">₹100</p>
+                    </div>
+                    <button id="myButton"  onclick="myFunction()">Buy now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- <button id="myButton">Buy now</button> -->
+            </div>
+            <!-- </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <footer class="footer-container color-scheme-dark">
+        <div class="container main-footer">
+          <link
+            rel="stylesheet"
+            id="elementor-post-15691-css"
+            href="https://seriyadryfruits.com/wp-content/uploads/elementor/css/post-15691.css?ver=1702575923"
+            type="text/css"
+            media="all"
+          />
+          <div
+            data-elementor-type="wp-post"
+            data-elementor-id="15691"
+            class="elementor elementor-15691"
+          >
+            <section
+              class="wd-negative-gap elementor-section elementor-top-section elementor-element elementor-element-38b260d elementor-section-boxed elementor-section-height-default elementor-section-height-default wd-section-disabled"
+              data-id="38b260d"
+              data-element_type="section"
+            >
+              <div
+                class="elementor-container elementor-column-gap-default"
+              ></div>
+            </section>
+            <section
+              class="wd-negative-gap elementor-section elementor-top-section elementor-element elementor-element-571e8b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default wd-section-disabled"
+              data-id="571e8b8"
+              data-element_type="section"
+            >
+              <div class="elementor-container elementor-column-gap-default">
+                <div
+                  class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2c5e79a"
+                  data-id="2c5e79a"
+                  data-element_type="column"
+                >
+                  <div
+                    class="elementor-widget-wrap elementor-element-populated"
+                  >
+                    <div
+                      class="elementor-element elementor-element-39020e8 elementor-widget elementor-widget-spacer"
+                      data-id="39020e8"
+                      data-element_type="widget"
+                      data-widget_type="spacer.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class="wd-negative-gap elementor-section elementor-top-section elementor-element elementor-element-182b8ea elementor-section-boxed elementor-section-height-default elementor-section-height-default wd-section-disabled"
+              data-id="182b8ea"
+              data-element_type="section"
+            >
+              <div class="elementor-container elementor-column-gap-default">
+                <div
+                  class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-779b8e3"
+                  data-id="779b8e3"
+                  data-element_type="column"
+                >
+                  <div
+                    class="elementor-widget-wrap elementor-element-populated"
+                  >
+                    <div
+                      class="elementor-element elementor-element-275c009 elementor-widget elementor-widget-image"
+                      data-id="275c009"
+                      data-element_type="widget"
+                      data-widget_type="image.default"
+                    >
+                      <div class="">
+                        <img
+                          width="300"
+                          height="200"
+                          src="../Black_Gold_LOGO-removebg.png"
+                          class="logoFooter"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-6aad127 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                      data-id="6aad127"
+                      data-element_type="widget"
+                      data-widget_type="icon-list.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <link
+                          rel="stylesheet"
+                          href="https://seriyadryfruits.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
+                        />
+                        <ul class="elementor-icon-list-items">
+                          <li class="">
+                            <a
+                              class="address"
+                              href="https://www.google.com/maps/search/Ac+70,+1st+St,+Ac+Block,+Anna+Nagar,+Chennai+%E2%80%93+600040/@13.0886533,80.2051971,16z/data=!3m1!4b1?hl=en-US&amp;entry=ttu"
+                            >
+                              <span class="elementor-icon-list-icon">
+                                <i
+                                  aria-hidden="true"
+                                  class="fas fa-location-arrow"
+                                ></i>
+
+                                <span class="elementor-icon-list-text"
+                                  >D.No.2, Thiru Vee Ka Nagar, 3rd Street, Pattukotaiyar Nagar, K Chettipalayam, Tiruppur 641604</span
+                                >
+                              </span>
+                            </a>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                            <a href="tel:9884529504" class="address">
+                              <span class="elementor-icon-list-icon">
+                                <i
+                                  aria-hidden="true"
+                                  class="fas fa-phone-alt"
+                                ></i>
+                              </span>
+                              <span class="elementor-icon-list-text"
+                                >Phone: 88258 91792</span
+                              >
+                            </a>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                            <a href="mailto:pk@gmail.com" class="address">
+                              <span class="elementor-icon-list-icon">
+                                <i
+                                  aria-hidden="true"
+                                  class="fas fa-mail-bulk"
+                                ></i>
+                              </span>
+                              <span class="elementor-icon-list-text"
+                                >versatilestraders@gmail.com</span
+                              >
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-363694f"
+                  data-id="363694f"
+                  data-element_type="column"
+                >
+                  <div
+                    class="elementor-widget-wrap elementor-element-populated"
+                  >
+                    <div
+                      class="elementor-element elementor-element-36515ed elementor-widget elementor-widget-heading"
+                      data-id="36515ed"
+                      data-element_type="widget"
+                      data-widget_type="heading.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <h2
+                          class="elementor-heading-title elementor-size-default"
+                        >
+                          Important links
+                        </h2>
+                      </div>
+                    </div>
+                    <div
+                      class="elementor-element elementor-element-1d67703 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                      data-id="1d67703"
+                      data-element_type="widget"
+                      data-widget_type="icon-list.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <ul class="elementor-icon-list-items">
+                          <li class="elementor-icon-list-item">
+                            <a href="#" class="links">
+                              <span class="elementor-icon-list-text">Home</span>
+                            </a>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                            <a class="links" href="#">
+                              <span class="elementor-icon-list-text"
+                                >Nuts</span
+                              >
+                            </a>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                            <a class="links" href="#">
+                              <span class="elementor-icon-list-text">Dry Fruits</span>
+                            </a>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                            <a class="links" href="#">
+                              <span class="elementor-icon-list-text">Spices</span>
+                            </a>
+                          </li>
+                          <li class="elementor-icon-list-item">
+                            <a class="links" href="#">
+                              <span class="elementor-icon-list-text"
+                                >Contact Us</span
+                              >
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f31f85b"
+                  data-id="f31f85b"
+                  data-element_type="column"
+                >
+                  <div
+                    class="elementor-widget-wrap elementor-element-populated"
+                  >
+                    <div
+                      class="elementor-element elementor-element-d876d46 elementor-widget-tablet__width-initial elementor-widget elementor-widget-google_maps"
+                      data-id="d876d46"
+                      data-element_type="widget"
+                      data-widget_type="google_maps.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <style>
+                          /*! elementor - v3.17.0 - 08-11-2023 */
+                          .elementor-widget-google_maps
+                            .elementor-widget-container {
+                            overflow: hidden;
+                          }
+                          .elementor-widget-google_maps
+                            .elementor-custom-embed {
+                            line-height: 0;
+                          }
+                          .elementor-widget-google_maps iframe {
+                            height: 300px;
+                          }
+                        </style>
+                        <div class="elementor-custom-embed">
+                          <!-- <iframe
+                            loading="lazy"
+                            src="https://maps.google.com/maps?q=Ac%2070%2C%201st%20St%2C%20Ac%20Block%2C%20Anna%20Nagar%2C%20Chennai%20%E2%80%93%20600040&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+                            title="Ac 70, 1st St, Ac Block, Anna Nagar, Chennai – 600040"
+                            aria-label="Ac 70, 1st St, Ac Block, Anna Nagar, Chennai – 600040"
+                          ></iframe> -->
+
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105359.68237194789!2d77.29103265576222!3d11.079605059279343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1703744485382!5m2!1sen!2sin" 
+                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              class="wd-negative-gap elementor-section elementor-top-section elementor-element elementor-element-50420d9 elementor-section-boxed elementor-section-height-default elementor-section-height-default wd-section-disabled"
+              data-id="50420d9"
+              data-element_type="section"
+            >
+              <div class="elementor-container elementor-column-gap-default">
+                <div
+                  class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e80a13c"
+                  data-id="e80a13c"
+                  data-element_type="column"
+                >
+                  <div
+                    class="elementor-widget-wrap elementor-element-populated"
+                  >
+                    <div
+                      class="elementor-element elementor-element-7c81b38 elementor-widget elementor-widget-spacer"
+                      data-id="7c81b38"
+                      data-element_type="widget"
+                      data-widget_type="spacer.default"
+                    >
+                      <div class="elementor-widget-container">
+                        <div class="elementor-spacer">
+                          <div class="elementor-spacer-inner"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- <div class="copyrights-wrapper copyrights-two-columns">
+          <div class="container">
+            <div class="min-footer">
+              <div class="col-left set-cont-mb-s reset-last-child">
+                <p>
+                  SERIYADRYFRUITS 2023 © CREATED BY
+                  <a href="https://princeinfotech.in/">PRINCE INFOTECH.</a>
+                  PREMIUM E-COMMERCE DEVELOPER.
+                </p>
+              </div>
+              <div class="col-right set-cont-mb-s reset-last-child">
+                <img
+                  src="http://seriyadryfruits.com/wp-content/themes/woodmart/images/payments.png"
+                  alt="payments"
+                />
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </footer>
+    </div>
+
+    <script>
+      // Access the array from the JavaScript file
+      //   const listContainer = document.getElementById("cardContainer");
+      const myList = [
+        {
+          name: "ALMONDS",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/black_sesame.jpg",
+          content: "Item 5",
+        },
+        {
+          name: "ALMONDS ",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/cashew_nuts.jpg",
+          content: "ALMONDS ",
+        },
+        {
+          name: "ALMONDS ",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/dry_grapes.jpg",
+          content: "ALMONDS ",
+        },
+        {
+          name: "ALMONDS ",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/nuts.jpg",
+          content: "ALMONDS ",
+        },
+        {
+          name: "ALMONDS ",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/white_sesame_seeds.jpg",
+          content: "ALMONDS ",
+        },
+        {
+          name: "ALMONDS ",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/white_sesame_seeds.jpg",
+          content: "ALMONDS ",
+        },
+        {
+          name: "ALMONDS ",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/nuts.jpg",
+          content: "ALMONDS ",
+        },
+        {
+          name: "ALMONDS ",
+          lowprice: "100",
+          highprice: "200",
+          img: "../list/nuts.jpg",
+          content: "ALMONDS ",
+        },
+      ];
+
+      // Get the card container
+      // const cardContainer = document.getElementById("cardContainer");
+
+      // myList.forEach((item) => {
+      //   // Use template literals for HTML content
+      //   const cardHTML = `
+      //       <div class="col-lg-3">
+      //           <div class="card">
+      //               <div class="cardHead">
+      //                   <img
+      //                           src="${item.img}"
+      //                           alt="Slide 1"
+      //                           class="cardsImg"
+      //                       />
+      //               </div>
+      //           <div class=contCard>
+      //               <div class="cardName">
+      //                   <p class="name">${item.name}</p>
+      //                   <p class="lowprice">₹${item.lowprice}</p>
+      //               </div>
+      //               <button id="myButton">Buy now</button>
+      //           </div>
+      //       </div>
+      //   </div>
+      // `;
+
+      //   // Append the card HTML to the container
+      //   cardContainer.innerHTML += cardHTML;
+      // });
+      //   // Create cards and append them to the card container
+      //   myList.forEach((item) => {
+      //     // Create a card element
+      //     const card = document.createElement("div");
+      //     card.className = "card";
+
+      //     // Create card title
+      //     const title = document.createElement("h2");
+      //     title.textContent = item.name;
+
+      //     // Create card content
+      //     const content = document.createElement("p");
+      //     content.textContent = item.content;
+
+      //     // Append title and content to the card
+      //     card.appendChild(title);
+      //     card.appendChild(content);
+
+      //     // Append the card to the container
+      //     cardContainer.appendChild(card);
+      //   });
+    </script>
+
+    <!-- Bootstrap JS (link to the CDN) - Make sure this is included at the end of the body -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include jQuery (required by Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include Owl Carousel JS (from CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Your custom script -->
+    <script src="homepage.js"></script>
+  </body>
+</html>

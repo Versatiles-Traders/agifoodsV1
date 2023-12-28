@@ -1,0 +1,200 @@
+.rightNav{
+    justify-content: flex-end;
+}
+.logoImg{
+    padding: 0px
+}
+.carousels{
+  margin-top: 70px;
+}
+
+.navbar.navbar-light{
+  background-color: #2d282c !important;
+}
+
+.nav-link{
+  color: white !important;
+}
+ /* Custom styles for navigation arrows */
+ .owl-nav {
+    position: absolute;
+    top: 35%;
+    /* transform: translateY(-50%); */
+    font-size: 50px;
+    color: #f8f9fa; /* Arrow color */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  /* .owl-nav:hover {
+    background: #333;
+    color: #fff;
+  } */
+
+  .owl-prev {
+    position: absolute;
+    left: 10px;
+  }
+
+  .owl-next {
+    position: absolute;
+    right: 10px;
+  }
+  .deliverProd{
+    background: #ffe6e6;
+  }
+  .deliverCont{
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+    gap: 45px;
+  }
+  .delivers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .deliverContent{
+    margin-top: 15px;
+  }
+  .deliverBrief{
+    font-size: 14px;
+
+  }
+  .AgiFoods{
+    font-size: 18px;
+  }
+  .elementor-icon-list-icon{
+    align-items: center;
+  }
+
+  .fas{
+    color: white;
+  }
+  .lefttNav{
+    justify-content: flex-end !important;
+  }
+  .popularHeader{
+    background-color: #f8f9fa;
+  }
+  .popularhead{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 35px;
+  }
+  .popularIMG{
+    text-align: center;
+  }
+  .PopularCont{
+    margin-top: 25px;
+  }
+  .popularContent{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .listProducts{
+    margin-top: 20px;
+    padding: 0px 55px;
+  }
+   /* Basic styling for cards */
+   .card {
+    margin-bottom: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    cursor: default;
+
+    &:hover {
+      transition: all 0.8s ease-out;
+      /* box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2); */
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+      top: -4px;
+      border: 1px solid #cccccc;
+      cursor: pointer;
+    }
+  }
+  .contCard{
+    padding: 10px;
+  }
+  .cardHead{
+    padding: 10px;
+  }
+  .cardsImg{
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .cardsImg:hover {
+    transform: scale(1.1);
+  }
+  .cardName{
+    display: flex;
+    justify-content: space-between;
+  }
+  .name{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+
+  }
+  .lowprice{
+    margin-bottom: 0px;
+  }
+  .content{
+    margin-bottom: 0px;
+  }
+  #myButton{
+    background: #2d282c;
+    padding: 4px 13px;
+    border-radius: 5px;
+    color: #f2e47a;
+    width: 100%;
+    border: 3px solid #fbbd71;
+  }
+
+  .elementor-column-gap-default{
+    display: flex;
+  }
+  .footer-container{
+    /* display: flex; */
+    background: #2d282c;
+    padding: 27px 0px;
+  }
+  .elementor-widget-container{
+    width: 90%;
+  }
+  .logoFooter{
+    width: 150px !important;
+    height: 140px !important;
+    margin-left: 33px;
+  }
+  .address{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  .links{
+    text-decoration: none;
+    color: black;
+    font-size: 14px; 
+  }
+  .navbar-nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .popularSubhead{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0px 25px !important;
+  }
+
+  .elementor-icon-list-text{
+    color: white !important;
+    margin-left: 10px;
+  }
